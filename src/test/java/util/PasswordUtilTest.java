@@ -20,4 +20,9 @@ public class PasswordUtilTest {
     public void medium_when_hass_lleters_and_numbers() {
         assertEquals(PasswordUtil.SecurityLevel.MEDIUM,PasswordUtil.assessPassword("abshd12c"));
     }
+
+    @Test
+    public void medium_when_hass_lleters_and_numbers_and_symbols() {
+        assertEquals(PasswordUtil.SecurityLevel.STRONG,PasswordUtil.assessPassword("abshd12c$"));
+    }
 }
