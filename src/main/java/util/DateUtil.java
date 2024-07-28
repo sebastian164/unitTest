@@ -3,7 +3,6 @@ package util;
 public class DateUtil {
 
     private DateUtil(){
-
     }
 
     public static boolean isLeapYear(int year){
