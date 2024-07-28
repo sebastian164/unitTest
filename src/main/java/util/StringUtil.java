@@ -3,11 +3,9 @@ package util;
 public class StringUtil {
 
     public static String repeat(String str, int times){
-        String result = "";
-        for (int i = 0; i < times; i++) {
-            result += str;
-        }
-        return result;
+        StringBuilder result = new StringBuilder();
+        result.append(String.valueOf(str).repeat(Math.max(0, times)));
+        return result.toString();
     }
 
     public boolean isNotEmpty(String str){

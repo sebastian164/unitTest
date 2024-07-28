@@ -6,12 +6,13 @@ public class Dice {
 
 
     private int sides;
+    private Random random = new Random();
 
     public Dice(int sides) {
         this.sides = sides;
     }
 
     public int roll(){
-        return new Random().nextInt(sides)+1;
+        return this.random.nextInt(sides)+1;
     }
 }
